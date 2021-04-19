@@ -1,5 +1,10 @@
 import styled from 'styled-components';
 
+// Images
+import logImg from '../../assets/logo.svg';
+import groupImg from '../../assets/group.png';
+import backgroundImg from '../../assets/car-image1.png';
+
 export const Container = styled.div`
   height: 100vh;
   
@@ -13,6 +18,8 @@ export const Logo = styled.div`
   height: 162px;
   left: 160px;
   top: 110px;
+
+  background: url(${logImg}) no-repeat;
 `;
 
 export const Title = styled.div`
@@ -53,6 +60,8 @@ export const Group = styled.div`
   height: 612.59px;
   left: 737px;
   top: 104px;
+
+  background: url(${groupImg}) no-repeat;
 `;
 
 export const CarImg = styled.div`
@@ -61,4 +70,6 @@ export const CarImg = styled.div`
   height: 398px;
   left: 672px;
   top: 211px;
+
+  background: url(${backgroundImg}) no-repeat center;
 `;

@@ -1,19 +1,13 @@
 import React from 'react';
 
-import logoImg from '../../assets/logo.svg';
-import groupImg from '../../assets/group.png';
-import carImg from '../../assets/car-image1.png';
-
 import Button from '../../components/Button';
 
-import { Container, Title, SubTitle, Logo, Group, CarImg } from './styles';
+import { Container, Logo, Title, SubTitle, Group, CarImg } from './styles';
 
 const Dashboard: React.FC = () => {
   return (
     <Container>
-      <Logo>
-        <img src={logoImg} alt="RentX" />
-      </Logo>
+      <Logo />
 
       <Title>
         <h1>Alugue um carro de maneira simples e fácil</h1>
@@ -23,13 +17,9 @@ const Dashboard: React.FC = () => {
         <p>Vários modelos para você dirigir seguro, com conforto e segurança.</p>
       </SubTitle>
 
-      <Group>
-        <img src={groupImg} alt="Group" />
-      </Group>
+      <Group />
 
-      <CarImg>
-        <img src={carImg} alt="Group" />
-      </CarImg>
+      <CarImg />
 
       <Button type="submit">
         <p>Começar agora</p>
